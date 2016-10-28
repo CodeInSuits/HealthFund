@@ -10,29 +10,69 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<script>
+	$(document).ready(function(){
+		$(".static_button").click(function() {
+			$(this).css("background-color", "#99bcbf");
+		});
+	});
+	</script>
 </head>
 <body>
-	<div class="title">SIGN UP</div>
-
-	<center>
-	<table>
-		<tr>
-			<td>E-mail:
-			</td>
-			<td><input type="text">
-			</td>
-		</tr>
-		<tr>
-			<td>Password:
-			</td>
-			<td><input type="password">
-			</td>
-		</tr>
-	</table>
-	<br /><br />
-	<center>[Other User Details To Enter...]</center>
-	<br />
-	<a href="home1.html"><div class="button">Sign Up</div></a><br />
-
+	<div class="container-fluid">
+		<div class="title" class="text-center">SIGN UP</div>
+			<center>
+				<div class="table-responsive" style="border: 0px;">
+				<table>
+					<tr>
+						<td style="padding-right: 35px;">Full Name:
+						</td>
+						<td><input type="text">
+						</td>
+					</tr>
+					<tr><td><br /></td></tr>
+					<tr>
+						<td style="padding-right: 35px;">Contact Number:
+						</td>
+						<td><input type="text">
+						</td>
+					</tr>
+					<tr><td><br /></td></tr>
+					<tr>
+						<td>E-mail:
+						</td>
+						<td><input type="text">
+						</td>
+					</tr>
+					<tr><td><br /></td></tr>
+					<tr>
+						<td style="padding-right: 35px;">Password:
+						</td>
+						<td><input type="password">
+						</td>
+					</tr>
+					<tr><td><br /></td></tr>
+					<tr>
+						<td style="padding-right: 35px;">Confirm Password:
+						</td>
+						<td><input type="password">
+						</td>
+					</tr>
+				</table><br />
+				Who are you?<br /><br />
+				<table>
+						<td style="padding-right: 10px;"><div class="static_button">SCIENTIST</div></td>
+						<td style="padding-right: 10px;"><div class="static_button">INVESTOR</div></td>
+						<td><div class="static_button">PATIENT</div></td>
+					</tr>
+				</table>
+				<br /><br />
+				<a href="home1.html"><div class="button">Sign Up</div></a><br />
+				<br />
+				</div>
+			</center>
+	</div>
 </body>
 </html>
